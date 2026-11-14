@@ -1,0 +1,16 @@
+{
+  "name": "zero-hunger",
+  "version": "1.0.0",
+  "description": "Zero Hunger — Food Sharing Platform with Node.js & SQLite Backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["zero-hunger", "food-sharing", "charity", "isef"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0"
+  }
+}
