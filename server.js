@@ -373,10 +373,13 @@ app.use((req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`====================================================`);
-  console.log(`  Zero Hunger Platform is running!`);
-  console.log(`  URL: http://localhost:${PORT}`);
-  console.log(`  Database: SQLite (zero_hunger.db)`);
-  console.log(`====================================================`);
+if (require.main===module){
+  app.listen(PORT,()=>{
+      console.log(`====================================================`);
+      console.log(`  Zero Hunger Platform is running!`);
+      console.log(`  URL: http://localhost:${PORT}`);
+      console.log(`  Database: SQLite (zero_hunger.db)`);
+      console.log(`====================================================`);
 });
+}
+module.exports = app;
